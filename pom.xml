@@ -64,7 +64,7 @@
       <toolchains>
         <jdk>
           <version>1.8</version>
-          <vendor>zulu</vendor>
+          <vendor>zulu_8.0</vendor>
         </jdk>
       </toolchains>
     </configuration>

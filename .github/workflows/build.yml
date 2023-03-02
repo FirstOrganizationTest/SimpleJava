@@ -22,8 +22,8 @@ jobs:
             11.0
           distribution: 'zulu'
       - name: Print environment variables
-        run: echo %JAVA_HOME_11_x64%
-             echo %JAVA_HOME_8_x64%
+        run: echo %JAVA_HOME_11_X64%
+             echo %JAVA_HOME_8_X64%
       - name: Cache SonarQube packages
         uses: actions/cache@v1
         with:
@@ -42,4 +42,4 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
           JDK_8: C:\hostedtoolcache\windows\Java_Zulu_jdk\8.0.362-9\x64
-        run: mvn -X -B clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
+        run: mvn -X -B clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -D"sonar.java.jdkHome=%JAVA_HOME_8_X64%"

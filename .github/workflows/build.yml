@@ -17,8 +17,9 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
+          distribution: 'adopt'
           java-version: |
-            8.68.0.21
+            8
             11
       - name: Cache SonarQube packages
         uses: actions/cache@v1

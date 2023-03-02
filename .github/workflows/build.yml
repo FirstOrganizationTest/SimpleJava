@@ -18,8 +18,8 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: |
-            11.0.18
-          distribution: 'oracle'
+            8.68.0.21
+          distribution: 'zulu'
       - name: Cache SonarQube packages
         uses: actions/cache@v1
         with:

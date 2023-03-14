@@ -8,11 +8,9 @@
     <artifactId>simplejava</artifactId>
     <version>1.0-SNAPSHOT</version>
 	
-	 <name>BitBucket - SimpleJavaMaven</name>
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
@@ -49,9 +47,27 @@
           <artifactId>jacoco-maven-plugin</artifactId>
           <version>0.8.6</version>
         </plugin>
+	 <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-toolchains-plugin</artifactId>
+    <version>1.1</version>
+    <executions>
+      <execution>
+        <goals>
+          <goal>toolchain</goal>
+        </goals>
+      </execution>
+    </executions>
+    <configuration>
+      <toolchains>
+        <jdk>
+          <version>1.8</version>
+          <vendor>zulu_8.0</vendor>
+        </jdk>
+      </toolchains>
+    </configuration>
+  </plugin>
       </plugins>
     </pluginManagement>
   </build>
-
-
 </project>

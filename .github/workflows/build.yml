@@ -41,4 +41,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -X -B clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -D"sonar.java.jdkHome=%JAVA_HOME_8_X64%"
+        run: mvn -X -B clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -D"sonar.java.jdkHome=%JAVA_HOME_8_X64%" -Dsonar.projectKey=TestForsecurityreport

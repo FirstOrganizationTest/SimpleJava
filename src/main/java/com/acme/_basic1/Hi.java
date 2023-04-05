@@ -22,7 +22,7 @@ try {
 	
 	Cipher cx4=Cipher.getInstance("AES/ECB/NoPadding");     // Noncompliant: ECB doesn't provide serious message confidentiality
 	Cipher cx5=Cipher.getInstance("AES/ECB/NoPadding");     // Noncompliant: ECB doesn't provide serious message confidentiality
-	
+	Cipher cx6=Cipher.getInstance("AES/ECB/NoPadding");     // Noncompliant: ECB doesn't provide serious message confidentiality
 	
 	Cipher cx2=Cipher.getInstance("AES/CBC/PKCS5Padding"); // Noncompliant: Vulnerable to Padding Oracle attacks
 

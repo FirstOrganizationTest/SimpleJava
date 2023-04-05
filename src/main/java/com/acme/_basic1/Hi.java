@@ -19,6 +19,8 @@ class Hi {
 try {
 	Cipher cx = Cipher.getInstance("AES");      // Noncompliant: by default ECB mode is chosen
 	Cipher cx1=Cipher.getInstance("AES/ECB/NoPadding");     // Noncompliant: ECB doesn't provide serious message confidentiality
+	
+	Cipher cx4=Cipher.getInstance("AES/ECB/NoPadding");     // Noncompliant: ECB doesn't provide serious message confidentiality
 
 	Cipher cx2=Cipher.getInstance("AES/CBC/PKCS5Padding"); // Noncompliant: Vulnerable to Padding Oracle attacks
 

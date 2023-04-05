@@ -21,7 +21,9 @@ try {
 	Cipher cx1=Cipher.getInstance("AES/ECB/NoPadding");     // Noncompliant: ECB doesn't provide serious message confidentiality
 	
 	Cipher cx4=Cipher.getInstance("AES/ECB/NoPadding");     // Noncompliant: ECB doesn't provide serious message confidentiality
-
+	Cipher cx5=Cipher.getInstance("AES/ECB/NoPadding");     // Noncompliant: ECB doesn't provide serious message confidentiality
+	
+	
 	Cipher cx2=Cipher.getInstance("AES/CBC/PKCS5Padding"); // Noncompliant: Vulnerable to Padding Oracle attacks
 
 	Cipher cx3 = Cipher.getInstance("RSA/None/NoPadding"); // Noncompliant: RSA without OAEP padding scheme is not recommended

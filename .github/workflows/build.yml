@@ -5,6 +5,7 @@ on:
       - main # the name of your main branch
       - feature1
       - feature2
+      - feature*
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:

@@ -6,7 +6,7 @@ node {
         stage('SQ-10.2') {
                 
                 withSonarQubeEnv('SQ-10.2') {
-			          bat "mvn clean verify sonar:sonar -Dsonar.login=c230d799d3d81df8d7206cab9bfeb7edc87445d8"
+			          bat "mvn clean verify sonar:sonar -Dsonar.token=c230d799d3d81df8d7206cab9bfeb7edc87445d8"
                 }
         }
 }

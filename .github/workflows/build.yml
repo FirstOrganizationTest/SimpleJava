@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main # the name of your main branch
+      - dev
       - feature1
       - feature2
       - feature*

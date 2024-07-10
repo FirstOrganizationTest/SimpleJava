@@ -10,6 +10,7 @@ public class HelloWorld {
     System.out.println("This method is not covered by unit tests.");
      System.out.println("This method is not covered by unit tests123456.");
      System.out.println("This third logger statement");
+    System.out.println("This fourth logger statement");
   }
 
 }

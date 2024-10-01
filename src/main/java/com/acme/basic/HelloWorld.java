@@ -9,6 +9,9 @@ public class HelloWorld {
   void notCovered() {
     System.out.println("This method is not covered by unit tests.");
      System.out.println("This method is not covered by unit tests123456.");
+     
+    //new smell added to validate the second scenario
+    System.out.println("This method is not covered by unit tests.");
   }
 
 }

@@ -6,6 +6,7 @@ on:
       - feature1
       - feature2
       - feature*
+      - release*
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:

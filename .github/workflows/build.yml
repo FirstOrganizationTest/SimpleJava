@@ -8,6 +8,7 @@ on:
       - feature*
   pull_request:
     types: [opened, synchronize, reopened]
+  workflow_dispatch:
 jobs:
   build:
     name: Build
@@ -44,4 +45,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -D"sonar.projectKey=DTCC_UseCase" -D"sonar.projectName=DTCC_UseCase" -X
+        run: mvn -B clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -D"sonar.projectKey=DTCC_UseCase_2" -D"sonar.projectName=DTCC_UseCase_2" -X

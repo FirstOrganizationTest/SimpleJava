@@ -6,6 +6,11 @@ public class HelloWorld {
     System.out.println("Hello World!!");
   }
 
+  int add(int a, int b){
+    int abc = a + b;
+    return abc;
+  }
+
   void notCovered() {
     System.out.println("This method is not covered by unit tests.");
      System.out.println("This method is not covered by unit tests123456.");

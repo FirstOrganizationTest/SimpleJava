@@ -6,7 +6,6 @@ on:
       - feature1
       - feature2
       - feature*
-      - release1
   pull_request:
     types: [opened, synchronize, reopened]
   workflow_dispatch:

@@ -11,4 +11,11 @@ public class HelloWorld {
      System.out.println("This method is not covered by unit tests123456.");
   }
 
+  //changes introduced for release branch
+void sub (){
+  int a = 10;
+  int b = 20;
+  System.out.println("Result is: "+ (b-a));
+}  
+
 }

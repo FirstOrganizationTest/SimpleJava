@@ -18,4 +18,11 @@ void sub (){
   System.out.println("Result is: "+ (b-a));
 }  
 
+  //changes introduced for feature branch
+void add (){
+  int a = 10;
+  int b = 20;
+  System.out.println("Result is: "+ (a+b));
+}  
+
 }

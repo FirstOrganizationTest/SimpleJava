@@ -23,6 +23,10 @@ try {
 	Cipher cx2=Cipher.getInstance("AES/CBC/PKCS5Padding"); // Noncompliant: Vulnerable to Padding Oracle attacks
 
 	Cipher cx3 = Cipher.getInstance("RSA/None/NoPadding"); // Noncompliant: RSA without OAEP padding scheme is not recommended
+
+	Cipher cx4 = Cipher.getInstance("RSA/None/NoPadding"); // Noncompliant: RSA without OAEP padding scheme is not recommended
+
+	Cipher cx5 = Cipher.getInstance("RSA/AES/NoPadding"); // Noncompliant: RSA without OAEP padding scheme is not recommended
 }catch (Exception e) {
 	
 }

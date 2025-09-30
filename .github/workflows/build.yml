@@ -45,4 +45,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -D"sonar.projectKey=AMEX_PR_Link" -D"sonar.projectName=AMEX_PR_Link" -X
+        run: mvn -B clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -D"sonar.projectKey=NokiaFrance" -D"sonar.projectName=NokiaFrance" -X

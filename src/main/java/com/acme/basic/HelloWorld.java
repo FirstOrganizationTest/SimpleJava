@@ -9,6 +9,7 @@ public class HelloWorld {
     int pqr = 20;
     int xyz = 30;
     int ab = 25;
+    int ssdd=40;
   }
 
   void notCovered() {

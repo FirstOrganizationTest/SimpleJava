@@ -1,4 +1,4 @@
-n_Issue_Statusname: Build
+name: Build
 on:
   push:
     branches:

@@ -6,6 +6,7 @@ public class HelloWorld {
 
   void sayHello() {
     System.out.println("Hello World!!");
+    int a1=10;
   }
 
   void notCovered() {

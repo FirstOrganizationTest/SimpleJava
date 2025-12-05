@@ -12,6 +12,7 @@ public class HelloWorld {
     int a4 = 10;
     int a5 = 10;
     int a6 = 10;
+    int a7 = 10;
   }
 
   void notCovered() {

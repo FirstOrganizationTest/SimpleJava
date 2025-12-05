@@ -6,6 +6,15 @@ public class HelloWorld {
 
   void sayHello() {
     System.out.println("Hello World!!");
+    int a1=10;
+    int a2 = 10;
+    int a3 = 10;
+    int a4 = 10;
+    int a5 = 10;
+    int a6 = 10;
+    int a7 = 10;
+    int a8 = 10;
+    int a9 = 10;
   }
 
   void notCovered() {

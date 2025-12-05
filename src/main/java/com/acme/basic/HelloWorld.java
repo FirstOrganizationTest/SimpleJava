@@ -13,6 +13,7 @@ public class HelloWorld {
     int a5 = 10;
     int a6 = 10;
     int a7 = 10;
+    int a8 = 10;
   }
 
   void notCovered() {
